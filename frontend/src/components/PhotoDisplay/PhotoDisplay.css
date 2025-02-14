@@ -1,0 +1,63 @@
+.photo-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .image-dropper {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  
+  /* ImageCard style */
+  /* Assuming ImageCard component will handle image display */
+  /* You can modify this section based on ImageCard implementation */
+  
+  @media (min-width: 1200px) {
+    .image-gallery {
+      max-width: 1200px;
+    }
+    .image-gallery .image-card {
+      width: 25%; /* Display 4 images in a row for large screens */
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .image-gallery .image-card {
+      width: 33.33%; /* Display 3 images in a row for medium screens */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .image-gallery .image-card {
+      width: 50%; /* Display 2 images in a row for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-gallery .image-card {
+      width: 100%; /* Display 1 image in a row for extra small screens */
+    }
+    .photo-display{
+      margin: 20px;
+    }
+  }
+  
+
+  .no__images{
+    align-self: center;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-top: 100px;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }

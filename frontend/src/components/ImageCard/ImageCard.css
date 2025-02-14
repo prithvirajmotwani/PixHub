@@ -1,0 +1,48 @@
+.image-card {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.image-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-details {
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .image-card {
+    width: calc(50% - 20px); /* For 2 images in a row on larger screens */
+    margin-right: 20px;
+  }
+
+  /* .image-card:nth-child(2n) {
+      margin-right: 0;
+    } */
+}
+
+@media (min-width: 992px) {
+  .image-card {
+    width: calc(
+      33.33% - 20px
+    ); /* For 3 images in a row on extra large screens */
+  }
+}
+
+.image__card-menu{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

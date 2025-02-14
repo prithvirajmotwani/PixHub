@@ -1,0 +1,67 @@
+.sidebar__main{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}   
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__main{
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.storage__network{
+  width: 100%;
+  margin-top: 10rem;
+}
+.progress {
+  height: 100%;
+  background-color: var(--secondary-color) !important;
+  border-radius: 8px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 15px;
+  background-color: #ddd !important;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .sidebar__main{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    min-width: 100%;
+
+  }
+  .storage__network{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    gap: 52px;
+  }
+}
+
+@media (max-width: 450px) {
+.storage__network{
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 0;
+}
+}
