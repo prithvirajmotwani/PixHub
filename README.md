@@ -1,6 +1,6 @@
 # PixHub: Cloud-based User Friendly Image Gallery
 
-PixHub is a microservices-based web application designed to provide users with an intuitive and efficient platform for managing and viewing their image collections. Built with scalability and user experience in mind, PhotoHub leverages various microservices to handle different aspects of the application.
+PixHub is a microservices-based web application designed to provide users with an intuitive and efficient platform for managing and viewing their image collections. Built with scalability and user experience in mind, PixHub leverages various microservices to handle different aspects of the application.
 
 ## Microservices Overview
 
